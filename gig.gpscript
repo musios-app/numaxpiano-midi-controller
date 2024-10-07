@@ -1,0 +1,195 @@
+// ------------------------------------
+// Map NUMA X Midi Controller mode messages to usable GP MIDI messages
+// ------------------------------------
+
+Var 
+    OSC_TargetName : String = "OSC_local"
+    OSC_IPadddress : String = OSC_GetIPAddressFromTargetName(OSC_TargetName)
+    OSC_Port : Integer = OSC_GetPortNumberFromTargetName(OSC_TargetName)
+
+    midiToOscAddress : String[128]
+
+
+// Map a MIDI CC number (1-127) to an internal alias
+// 
+// Note on naming
+// Here the aliases are named by the labelled on the NUMA control panel
+// e.g. "Zone1_Rotate" is the MIDI message when the knob for Zone 1 is rotated
+//
+// However, it you have specific meanings then substitute them.
+// For "Zone1_Rotate" might better as "Volume_Instrument1"
+
+Function InitControllerMapping()
+    midiToOscAddress[1] = "Modulation"
+    midiToOscAddress[1] = "Joystick_X"
+
+    // Instrument / Audio Panel
+    midiToOscAddress[12] = "Zone1_Press"
+    midiToOscAddress[33] = "Zone1_Rotate"
+
+    midiToOscAddress[13] = "Zone2_Press"
+    midiToOscAddress[34] = "Zone2_Rotate"
+
+    midiToOscAddress[14] = "Zone3_Press"
+    midiToOscAddress[35] = "Zone3_Rotate"
+
+    midiToOscAddress[15] = "Zone4_Press"
+    midiToOscAddress[36] = "Zone4_Rotate"
+
+    // FXA Panel
+    midiToOscAddress[73] = "FXA_Rotate"
+    midiToOscAddress[74] = "FXA_Press"
+
+    // Press the param button to switch between the 3 parameters
+    // Note: this press does not generate any MIDI
+    midiToOscAddress[75] = "FXA_P1_Rotate"
+    midiToOscAddress[76] = "FXA_P2_Rotate"
+    midiToOscAddress[77] = "FXA_P3_Rotate"
+
+    // FXB Panel
+    midiToOscAddress[105] = "FXB_Rotate"
+    midiToOscAddress[106] = "FXB_Press"
+
+    // Press the param button to switch between the 3 parameters
+    // Note: this press does not generate any MIDI
+    midiToOscAddress[107] = "FXB_P1_Rotate"
+    midiToOscAddress[108] = "FXB_P2_Rotate"
+    midiToOscAddress[109] = "FXB_P3_Rotate"
+
+
+    // TODO press of master FX is weird. Looks like:
+    // - If enabled then send the current value
+    // - If disabled then send 0
+    // So if the current value is 0 then unable to tell if it is enabled or disabled
+
+    midiToOscAddress[25] = "Delay_Rotate"
+    // midiToOscAddress[25] = "Delay_Press"
+
+    midiToOscAddress[57] = "Delay_P1_Rotate"
+    midiToOscAddress[58] = "Delay_P2_Rotate"
+    midiToOscAddress[59] = "Delay_P3_Rotate"
+
+
+    midiToOscAddress[29] = "Reverb_Rotate"
+    // midiToOscAddress[29] = "Reverb_Press"
+
+    midiToOscAddress[61] = "Reverb_P1_Rotate"
+    midiToOscAddress[62] = "Reverb_P2_Rotate"
+    midiToOscAddress[63] = "Reverb_P3_Rotate"
+End
+
+    
+Function FindString(arr : String Array, str : String) Returns Integer
+    var idx : Integer
+
+    result = -1
+    For idx = 0; idx < Size(arr); idx = idx + 1 Do
+        If arr[idx] == str Then result = idx End
+    End
+End
+
+// Function PrintMidiDevices()
+//     var
+//         idx : Integer
+//         count : Integer = GetMidiInDeviceCount()
+
+//     For idx = 0; idx < count; idx = idx + 1 Do
+//         Print("MIDI IN: " + GetMidiInDeviceName(idx))
+//     End
+// End
+
+Initialization
+    If !OSC_Enabled() Then
+        DisplayTemporaryMessage("WARNING: OSC is not enabled")
+        Print("WARNING: OSC is not enabled")
+    End
+
+    InitControllerMapping()
+End
+
+
+
+On ControlChangeEvent(m : ControlChangeMessage) from NumaXPiano
+    var
+        ccNumber : Integer = GetCCNumber(m)
+        ccValue : Integer = GetCCValue(m)
+        control : String = midiToOscAddress[ccNumber]
+        address : String = "/" + NumaName + "/From"
+
+    Print(m)
+
+    If control != ""
+    Then
+        Print("Sending OSC message: " + address + "/" + control + "/" + ccValue)
+        SendOSCMessage  { address, control, ccValue } to OSC_IPadddress : OSC_Port
+    Else
+        Print(m)
+        InjectMidiEventViaRigManager(NumaXPiano, m)
+    End
+End
+
+
+
+On OSCMessageReceived(m : OSCMessage) Matching "/NumaX/To"
+    var 
+        idx : Integer
+        control : String = OSC_GetArgAsString(m, 0)
+        ccValue : Integer = OSC_GetArgAsInteger(m, 1)
+        ccNumber : Integer = FindString(midiToOscAddress, OSC_GetArgAsString(m, 0))
+        ccMsg : ControlChangeMessage
+        midiCCmsg : ControlChangeMessage = MakeControlChangeMessageEx(ccNumber, ccValue, 1)
+
+    If ccNumber >= 0
+    Then
+        Print("/NumaX/To with control: " + control + " ccNumber: " + ccNumber + " ccValue: " + ccValue)
+        SendNowToMidiOutDevice ("XPIANO73", midiCCmsg)
+    End
+End
+
+
+
+    // // These buttons send a 127 value whenever pressed)
+    // KnobPressToMomentary : Integer Array = [
+    //     106,    // Next_Song
+    //     74,     // Prev_Song
+    //     25      // Auto_Fade
+    // ]
+     
+    // // These 4 zones alternate between 1 (on) and 2 (mute)
+    // // The GP mute buttons are on (127) and off (0)
+    // KnobPressToToggle : Integer Array = [
+    //     12,     // Zone 1 knob press
+    //     13,     // Zone 2 knob press
+    //     14,     // Zone 3 knob press
+    //     15      // Zone 4 knob press
+    // ]
+
+    // KnobAbsoluteToRelative : Integer Array = [
+    //     33,    // Zone 1 knob
+    //     34,    // Zone 2 knob
+    //     35,    // Zone 3 knob
+    //     36     // Zone 4 knob
+    // ]
+
+// On ControlChangeEvent(m : ControlChangeMessage) from NumaXPiano
+//     var
+//         number : Integer = GetCCNumber(m)
+//         value : Integer = GetCCValue(m)
+//         newMsg : MidiMessage = m
+    
+//     Print(m)
+
+//     If IndexOf(KnobPressToMomentary, number) >= 0
+//     Then
+//         newMsg = WithCCValue(m, 127)
+//     Elsif IndexOf(KnobPressToToggle, number) >= 0
+//     Then
+//         newMsg = WithCCValue(m, (If value == 1 Then 0 Else 127 End))
+//     Elsif IndexOf(KnobAbsoluteToRelative, number) >= 0
+//     Then
+//         Print(m)
+//     End
+    
+//     InjectMidiEventViaRigManager(NumaXPiano, newMsg)
+// End
+
