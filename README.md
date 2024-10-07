@@ -10,12 +10,6 @@ Notes:
 * The documentation and images is from a NUMA X Piano 73. It is likely that the 88 and 88 HD will be similar but this needs to be confirmed. Unfortunately, I have no idea about the Compact series. Use the issues or submit a pull request if you can help.
 * This work was done on a Mac. It shouldn't be that different for Windows or Linux.
 
-<style>
-    img {
-        width: 200px;
-    }
-</style>
-
 
 ## Set up NUMA X Piano as MIDI Controller
 
@@ -31,7 +25,7 @@ This is just one example with minimal capability.
 
 (Aside: I use program 1 for quick and reliable setup for live gigs. Program 2, 3 etc. are standard sounds just in case there's a computer failure. These are an EP, piano, rock organ, strings and so on.)
 
-<img src="images/numax-settings/MIDI-controller-program.jpg"/>
+<img src="images/numax-settings/MIDI-controller-program.jpg" style="width: 200px" style="width: 200px"/>
 
 
 ### Program settings for Zone 1
@@ -42,11 +36,11 @@ Keep a record of the CC numbers for Knobs 1-4. The MIDI receiver (e.g. Gig Perfo
 
 Note: we don't need to update settings for Zones 2-4 as they are disabled.
 
-<img src="images/numax-settings/Zone 1 setting 1-4.jpg"/>
-<img src="images/numax-settings/Zone 1 setting 2-4.jpg"/>
+<img src="images/numax-settings/Zone 1 setting 1-4.jpg" style="width: 200px" style="width: 200px"/>
+<img src="images/numax-settings/Zone 1 setting 2-4.jpg" style="width: 200px" style="width: 200px"/>
 
-<img src="images/numax-settings/Zone 1 setting 3-4.jpg"/>
-<img src="images/numax-settings/Zone 1 setting 4-4.jpg"/>
+<img src="images/numax-settings/Zone 1 setting 3-4.jpg" style="width: 200px" style="width: 200px"/>
+<img src="images/numax-settings/Zone 1 setting 4-4.jpg" style="width: 200px" style="width: 200px"/>
 
 
 ### Save the Program
@@ -61,7 +55,7 @@ Click the tick button (✔️) to save the program.
 
 Finally, ensure that Zone 1 is enabled and that the button below is lit.
 
-<img src="images/numax-settings/Zone selections.jpg"/>
+<img src="images/numax-settings/Zone selections.jpg" style="width: 200px"/>
 
 ## Global Settings
 
@@ -73,13 +67,13 @@ Required setting:
 
 **Your NUMA X Piano should now be acting as a MIDI controller!**
 
-<img src="images/numax-settings/Global Settings 1 of 5.jpeg"/>
-<img src="images/numax-settings/Global Settings 2 of 5.jpeg"/>
+<img src="images/numax-settings/Global Settings 1 of 5.jpeg" style="width: 200px"/>
+<img src="images/numax-settings/Global Settings 2 of 5.jpeg" style="width: 200px"/>
 
-<img src="images/numax-settings/Global Settings 3 of 5.jpeg"/>
-<img src="images/numax-settings/Global Settings 4 of 5.jpeg"/>
+<img src="images/numax-settings/Global Settings 3 of 5.jpeg" style="width: 200px"/>
+<img src="images/numax-settings/Global Settings 4 of 5.jpeg" style="width: 200px"/>
 
-<img src="images/numax-settings/Global Settings 5 of 5.jpeg"/>
+<img src="images/numax-settings/Global Settings 5 of 5.jpeg" style="width: 200px"/>
 
 
 ## Verifying MIDI Messages
