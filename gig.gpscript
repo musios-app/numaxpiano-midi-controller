@@ -23,59 +23,131 @@ Function InitControllerMapping()
     midiToOscAddress[1] = "Modulation"
     midiToOscAddress[1] = "Joystick_X"
 
+    // ------------------------
     // Instrument / Audio Panel
-    midiToOscAddress[12] = "Zone1_Press"
+    // ------------------------
+
+    // These controls send the same MIDI CC number across all 4 zones
     midiToOscAddress[33] = "Zone1_Rotate"
-
-    midiToOscAddress[13] = "Zone2_Press"
     midiToOscAddress[34] = "Zone2_Rotate"
-
-    midiToOscAddress[14] = "Zone3_Press"
     midiToOscAddress[35] = "Zone3_Rotate"
-
-    midiToOscAddress[15] = "Zone4_Press"
     midiToOscAddress[36] = "Zone4_Rotate"
 
-    // FXA Panel
-    midiToOscAddress[73] = "FXA_Rotate"
-    midiToOscAddress[74] = "FXA_Press"
+    midiToOscAddress[12] = "Zone1_Press"
+    midiToOscAddress[13] = "Zone2_Press"
+    midiToOscAddress[14] = "Zone3_Press"
+    midiToOscAddress[15] = "Zone4_Press"
+
+    // ------------------------
+    // FXA Controls
+    // ------------------------
+
+    // Sends different contols depending upon which of the 4 zones is enabled
+    midiToOscAddress[68] = "FXA_Rotate"         // zone 1  - values 0 - 127
+    midiToOscAddress[73] = "FXA_Rotate"         // zone 2  - values 0 - 127
+    midiToOscAddress[78] = "FXA_Rotate"         // zone 3  - values 0 - 127
+    midiToOscAddress[83] = "FXA_Rotate"         // zone 4  - values 0 - 127
+
+    midiToOscAddress[69] = "FXA_Press"          // zone 1  - values 0 or 64
+    midiToOscAddress[74] = "FXA_Press"          // zone 2  - values 0 or 64
+    midiToOscAddress[79] = "FXA_Press"          // zone 3  - values 0 or 64
+    midiToOscAddress[84] = "FXA_Press"          // zone 4  - values 0 or 48
 
     // Press the param button to switch between the 3 parameters
     // Note: this press does not generate any MIDI
-    midiToOscAddress[75] = "FXA_P1_Rotate"
-    midiToOscAddress[76] = "FXA_P2_Rotate"
-    midiToOscAddress[77] = "FXA_P3_Rotate"
+    midiToOscAddress[70] = "FXA_P1_Rotate"       // zone 1  - values 0 - 127
+    midiToOscAddress[75] = "FXA_P1_Rotate"       // zone 2  - values 0 - 127
+    midiToOscAddress[80] = "FXA_P1_Rotate"       // zone 3  - values 0 - 127
+    midiToOscAddress[85] = "FXA_P1_Rotate"       // zone 4  - values 0 - 127
 
-    // FXB Panel
-    midiToOscAddress[105] = "FXB_Rotate"
-    midiToOscAddress[106] = "FXB_Press"
+    midiToOscAddress[71] = "FXA_P2_Rotate"       // zone 1  - values 0 - 127
+    midiToOscAddress[76] = "FXA_P2_Rotate"       // zone 2  - values 0 - 127
+    midiToOscAddress[81] = "FXA_P2_Rotate"       // zone 3  - values 0 - 127
+    midiToOscAddress[86] = "FXA_P2_Rotate"       // zone 4  - values 0 - 127
+
+    midiToOscAddress[72] = "FXA_P3_Rotate"       // zone 1  - values 0 - 127
+    midiToOscAddress[77] = "FXA_P3_Rotate"       // zone 2  - values 0 - 127
+    midiToOscAddress[82] = "FXA_P3_Rotate"       // zone 3  - values 0 - 127
+    midiToOscAddress[87] = "FXA_P3_Rotate"       // zone 4  - values 0 - 127
+
+
+    // ------------------------
+    // FXB Controls
+    // ------------------------
+
+    // Sends different contols depending upon which of the 4 zones is enabled
+    midiToOscAddress[100] = "FXB_Rotate"         // zone 1  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[105] = "FXB_Rotate"         // zone 2  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[110] = "FXB_Rotate"         // zone 3  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[115] = "FXB_Rotate"         // zone 4  - values 0 - 127 (enabled or disabled)
+
+    midiToOscAddress[101] = "FXB_Press"          // zone 1  - values 0 or 8
+    midiToOscAddress[106] = "FXB_Press"          // zone 2  - values 0 or 27
+    midiToOscAddress[111] = "FXB_Press"          // zone 3  - values 0 or 8
+    midiToOscAddress[116] = "FXB_Press"          // zone 4  - values 0 or 8
 
     // Press the param button to switch between the 3 parameters
     // Note: this press does not generate any MIDI
-    midiToOscAddress[107] = "FXB_P1_Rotate"
-    midiToOscAddress[108] = "FXB_P2_Rotate"
-    midiToOscAddress[109] = "FXB_P3_Rotate"
+    midiToOscAddress[102] = "FXB_P1_Rotate"       // zone 1  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[107] = "FXB_P1_Rotate"       // zone 2  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[112] = "FXB_P1_Rotate"       // zone 3  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[117] = "FXB_P1_Rotate"       // zone 4  - values 0 - 127 (enabled or disabled)
+
+    midiToOscAddress[103] = "FXB_P2_Rotate"       // zone 1  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[108] = "FXB_P2_Rotate"       // zone 2  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[113] = "FXB_P2_Rotate"       // zone 3  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[118] = "FXB_P2_Rotate"       // zone 4  - values 0 - 127 (enabled or disabled)
+
+    midiToOscAddress[104] = "FXB_P3_Rotate"       // zone 1  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[109] = "FXB_P3_Rotate"       // zone 2  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[114] = "FXB_P3_Rotate"       // zone 3  - values 0 - 127 (enabled or disabled)
+    midiToOscAddress[119] = "FXB_P3_Rotate"       // zone 4  - values 0 - 127 (enabled or disabled)
 
 
-    // TODO press of master FX is weird. Looks like:
-    // - If enabled then send the current value
+    // ------------------------
+    // Master Delay Controls
+    // ------------------------
+
+    // Delay_Rotate and Delay_Press send the SAME MIDI CC number
+    // When Delay_Press is enabled, operates as a rotate from 0-127
+    // - If enabled then send the current value from 0-127
     // - If disabled then send 0
-    // So if the current value is 0 then unable to tell if it is enabled or disabled
+    // Notes:
+    // 1. Because rotate and disable can both deliver 0, it doesn't have clear enable/disable state
+    // 2. Rotation while disabled updates the internal value (but sends 1)
 
-    midiToOscAddress[25] = "Delay_Rotate"
-    // midiToOscAddress[25] = "Delay_Press"
+    midiToOscAddress[24] = "Delay_Rotate"      // zone 1  - values 0 - 127  (enabled) always 0 when disabled
+    midiToOscAddress[25] = "Delay_Rotate"      // zone 2  - values 0 - 127  (enabled) always 0 when disabled
+    midiToOscAddress[26] = "Delay_Rotate"      // zone 3  - values 0 - 127  (enabled) always 0 when disabled
+    midiToOscAddress[27] = "Delay_Rotate"      // zone 4  - values 0 - 127  (enabled) always 0 when disabled
 
-    midiToOscAddress[57] = "Delay_P1_Rotate"
-    midiToOscAddress[58] = "Delay_P2_Rotate"
-    midiToOscAddress[59] = "Delay_P3_Rotate"
+    // P1, P2, P3 send the same MIDI CC number for any zone
+    // Press the param button to switch between the 3 parameters
+    // Note: press does not generate any MIDI
+
+    midiToOscAddress[57] = "Delay_P1_Rotate"     // zones 1-4  - values 0 - 127
+    midiToOscAddress[58] = "Delay_P2_Rotate"     // zones 1-4  - values 0 - 127
+    midiToOscAddress[59] = "Delay_P3_Rotate"     // zones 1-4  - values 0 - 127
 
 
-    midiToOscAddress[29] = "Reverb_Rotate"
-    // midiToOscAddress[29] = "Reverb_Press"
+    // ------------------------
+    // Master Delay Controls
+    // ------------------------
 
-    midiToOscAddress[61] = "Reverb_P1_Rotate"
-    midiToOscAddress[62] = "Reverb_P2_Rotate"
-    midiToOscAddress[63] = "Reverb_P3_Rotate"
+    // Same behaviour for Reverb_Rotate/Press as for Delay_Rotate/Press
+
+    midiToOscAddress[28] = "Reverb_Rotate"      // zone 1  - values 0 - 127  (enabled) always 0 when disabled
+    midiToOscAddress[29] = "Reverb_Rotate"      // zone 2  - values 0 - 127  (enabled) always 0 when disabled
+    midiToOscAddress[30] = "Reverb_Rotate"      // zone 3  - values 0 - 127  (enabled) always 0 when disabled
+    midiToOscAddress[31] = "Reverb_Rotate"      // zone 4  - values 0 - 127  (enabled) always 0 when disabled
+
+    // P1, P2, P3 send the same MIDI CC number for any zone
+    // Press the param button to switch between the 3 parameters
+    // Note: press does not generate any MIDI
+
+    midiToOscAddress[61] = "Reverb_P1_Rotate"     // zones 1-4  - values 0 - 127
+    midiToOscAddress[62] = "Reverb_P2_Rotate"     // zones 1-4  - values 0 - 127
+    midiToOscAddress[63] = "Reverb_P3_Rotate"     // zones 1-4  - values 0 - 127
 End
 
     
@@ -98,6 +170,7 @@ End
 //     End
 // End
 
+
 Initialization
     If !OSC_Enabled() Then
         DisplayTemporaryMessage("WARNING: OSC is not enabled")
@@ -108,7 +181,6 @@ Initialization
 End
 
 
-
 On ControlChangeEvent(m : ControlChangeMessage) from NumaXPiano
     var
         ccNumber : Integer = GetCCNumber(m)
@@ -116,14 +188,15 @@ On ControlChangeEvent(m : ControlChangeMessage) from NumaXPiano
         control : String = midiToOscAddress[ccNumber]
         address : String = "/" + NumaName + "/From"
 
-    Print(m)
+    Print("ControlChangeEvent: '" + control + "' " + ccNumber + " " + ccValue)
 
     If control != ""
     Then
         Print("Sending OSC message: " + address + "/" + control + "/" + ccValue)
-        SendOSCMessage  { address, control, ccValue } to OSC_IPadddress : OSC_Port
+        // SendOSCMessage  { address, control, ccValue } to OSC_IPadddress : OSC_Port
     Else
-        Print(m)
+        // Pass through unknown MIDI CC
+        Print("Unknown MIDI CC" + m)
         InjectMidiEventViaRigManager(NumaXPiano, m)
     End
 End
