@@ -87,6 +87,122 @@ First, verify connectivity by playing some notes on the keyboard. You should see
 Now, turn the Zone 1 knob. You should see CC messages in the monitor. Specifically, the CC number should match the Knob 1 CC setting in the Program settings for Zone 1 (it's CC 22 in the image above).  If not, check that the configuration is completed.
 
 
+
+## Surface Controls as a MIDI Controller
+
+Not all the buttons and knobs on the NUMA X Piano are available as MIDI controllers.
+
+<div>
+    <img src="images/surface-controls/Surface controls - no MIDI.png"/>
+    <div style="font-style: italic">Surface controls that are not available as MIDI controllers</div>
+</div>
+
+
+We now focus on the controllers - buttons and knobs - that are available as MIDI controllers.
+
+<div>
+    <img src="images/surface-controls/Surface controls - with MIDI.png"/>
+    <div style="font-style: italic">Surface controllers that deliver MIDI messages</div>
+</div>
+
+
 ## MIDI Specification for NUMA X Piano in MIDI Controller Mode
 
+This is rough specification for the controllers above that provide MIDI messages (from left to right).
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Group</th>
+            <th>Controller</th>
+            <th>Type</th>
+            <th>Action</th>
+            <th>CC Number</th>
+            <th>CC Value</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Assignable</td>
+            <td rowspan="2">Assignable</td>
+            <td rowspan="2">Knob</td>
+            <td>Rotate</td>
+            <td>3</td>
+            <td>0 - 127</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Press</td>
+            <td>-</td>
+            <td>-</td>
+            <td></td>
+        </tr>
+        <!-- Instrument Knobs -->
+        <tr>
+            <td rowspan="8">Instrument Knobs</td>
+            <td rowspan="2">Zone 1</td>
+            <td rowspan="2">Knob</td>
+            <td>Rotate</td>
+            <td>33</td>
+            <td>0 - 127</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Press</td>
+            <td>12</td>
+            <td>1 - 2</td>
+            <td>[a]</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Zone 2</td>
+            <td rowspan="2">Knob</td>
+            <td>Rotate</td>
+            <td>34</td>
+            <td>0 - 127</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Press</td>
+            <td>13</td>
+            <td>1 - 2</td>
+            <td>[a]</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Zone 3</td>
+            <td rowspan="2">Knob</td>
+            <td>Rotate</td>
+            <td>35</td>
+            <td>0 - 127</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Press</td>
+            <td>14</td>
+            <td>1 - 2</td>
+            <td>[a]</td>
+        </tr>
+                <tr>
+            <td rowspan="2">Zone 4</td>
+            <td rowspan="2">Knob</td>
+            <td>Rotate</td>
+            <td>36</td>
+            <td>0 - 127</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Press</td>
+            <td>15</td>
+            <td>1 - 2</td>
+            <td>[a]</td>
+        </tr>
+    </tbody>
+</table>
+
+Footnotes:
+
+[a] Press toggles between Zone On (value=2) and Off (value=1) (light on and off).
+
+[b] Long press sets the zone to solo (value=2) with the other zones off (value=1). That's 4 MIDI control messages.
 
