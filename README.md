@@ -1,4 +1,10 @@
-# NUMA X Piano as MIDI Controller
+---
+layout: default
+title: Numa X Piano as MIDI Controller
+description: Set up a Numa X Piano as a MIDI controller for live performances (and avoid some of it's quirks)
+---
+
+# Studiologic Numa X Piano as MIDI Controller
 
 Two objectives:
 
