@@ -2,14 +2,25 @@
 layout: default
 title: Numa X Piano as MIDI Controller
 description: Set up a Numa X Piano as a MIDI controller for live performances (and avoid some of it's quirks)
+gitrepo: https://github.com/musios-app/numaxpiano-midi-controller
 ---
 
 # Studiologic Numa X Piano as MIDI Controller
 
-Two objectives:
+Long-story-short, I find the MIDI controller mode of the Studiologic Numa X Piano to be difficult to use live. This project does MIDI mapping of the knobs and buttons so that they function consistently. The implementation described uses Bome MIDI Translator Pro for the mapping and Gig Performer as the live environment on a Mac. The approach can be adapted to other environments.
 
-1. Document how NUMA X Piano works as a MIDI controller
-2. Get it working smoothly in Gig Performer
+## The Issue
+
+The Numa X Piano has a delightful interface with the colours, modes and all that. However, most of the knbos behave differently when different Zones are selected or when adjusting different parameters.  The effect is that muting / unmuting an instrument changes the CC behaviour of nearly all the knobs! 
+
+For example: when the FXA knob is rotated when Zone 1 is active, the Numa sends MIDI CC 33. But if Zone 2 is active, it is MIDI CC 34 (or 35, 36 for Zone 3 and 4 respectively).
+
+It's worst when the performance software (e.g. Gig Performer) is making changes to those settings during a song or on song change. This can lead to unexpected jumps in volume, reverb and other controls.
+
+## The Solution
+
+Introduce a mapping "proxy" between the XXX
+
 
 Notes: 
 * This is a work in progress. The Studiologic doc is sparse so there may be errors. Please submit comments in [issues page on the Github project](https://github.com/andrewjhunt/numaxpiano-midi-controller).
