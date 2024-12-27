@@ -3,6 +3,7 @@ layout: default
 title: Numa X Piano as MIDI Controller
 description: Set up a Numa X Piano as a MIDI controller for live performances (and avoid some of it's quirks)
 gitrepo: https://github.com/musios-app/numaxpiano-midi-controller
+tags: studiologic midi-controller numa-x-piano
 ---
 
 # Studiologic Numa X Piano as MIDI Controller
