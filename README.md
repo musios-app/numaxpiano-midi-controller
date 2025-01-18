@@ -46,15 +46,14 @@ image: /projects/numaxpiano-midi-controller/images/og-numax-midi-controller-mapp
 
 
 <div class="alert alert-danger" role="alert" style="font-size: 130%">
-    WORK IN PROGRESS - I JUST NEED TIME 🕑
-    <br/>
-    THE ALGORITHM IS IMPLEMENTED AND DOCUMENTED BELOW
-    <br/>
-    THE IMPLEMENTATION IN BOME IS FUNCTIONAL BUT NOT PUBLISHED HERE YET
-    <br/>
-    THE IMPLEMENTATION IN NODE.JS IS FUNCTIONAL BUT NOT PUBLISHED HERE YET
-    <br/>
-    THIS PAGE IS A BIT OF A MESS!!
+    <p>WORK IN PROGRESS</p>
+    <p>The algrotihm below is implemented and tested in a gig. It works 😀</p>
+    <p>I need a week or two to:</p>
+    <ul>
+        <li>Get the Bome implementation documented and published</li>
+        <li>Clean up the node.js version and try to address latency</li>
+        <li>Clean up this page and get the "Download and Use It" part to the top</li>
+    </ul>
 </div>
 
 
@@ -580,13 +579,20 @@ If the piano has Zone 1 selected, the Numa X will send MIDI CC number 100 (x64).
 The [Bome MIDI Translator Pro](https://www.bome.com/products/miditranslator) is a paid product. I am using it because it is built for this kind of MIDI mapping
 and performs with low latency.
 
+<div class="alert alert-danger" role="alert">
+    NOTE: It's working and I've used it in rehearsals. Some minor issues to sort out then publish.
+
+    Check the `javascript` directory in the <a href="https://github.com/musios-app/numaxpiano-midi-controller">numaxpiano-midi-controller</a> for the JS source to convert the algorithm to a BOME script. I need to get the full BOME script finalised.
+</div>
+
+
 
 
 
 ## Implementation with NodeJS / JavaScript
 
 <div class="alert alert-danger" role="alert">
-    NOTE: This implementation is functional but has noticeable latency on pass-through of MIDI messages making playing keys. 
+    NOTE: This implementation is functional but has noticeable latency on pass-through of MIDI messages making playing keys. It was about 15-20msec but I didn't do proper measurement or determine the specific source of the latency.
 </div>
 
 A rough measurement with MIDI Monitor showed delays around 20msec (unsatisfactory is above 2-5msaec).
@@ -613,71 +619,6 @@ All the relevant Numa X documentation that I could find is on the **[Numa X Pian
 
 
 
-## Set up NUMA X Piano as MIDI Controller
-
-### Program Zones
-
-Create a Program on the keyboard to use when NUMA X Piano is in MIDI controller mode. 
-This is just one example with minimal capability.
-
-* Zone 1: MIDI USB
-* Zone 2: Off
-* Zone 3: Off
-* Zone 4: Off
-
-(Aside: I use program 1 for quick and reliable setup for live gigs. Program 2, 3 etc. are standard sounds just in case there's a computer failure. These are an EP, piano, rock organ, strings and so on.)
-
-<img src="images/numax-settings/MIDI-controller-program.jpg" style="width: 200px" style="width: 200px"/>
-
-
-### Program settings for Zone 1
-
-Ensure that "Zone Status" is "On" for Zone 1.  All other settings can be modified to your preference.
-
-Keep a record of the CC numbers for Knobs 1-4. The MIDI receiver (e.g. Gig Performer) will need to match these.
-
-Note: we don't need to update settings for Zones 2-4 as they are disabled.
-
-<img src="images/numax-settings/Zone 1 setting 1-4.jpg" style="width: 200px" style="width: 200px"/>
-<img src="images/numax-settings/Zone 1 setting 2-4.jpg" style="width: 200px" style="width: 200px"/>
-
-<img src="images/numax-settings/Zone 1 setting 3-4.jpg" style="width: 200px" style="width: 200px"/>
-<img src="images/numax-settings/Zone 1 setting 4-4.jpg" style="width: 200px" style="width: 200px"/>
-
-
-### Save the Program
-
-Click the tick button (✔️) to save the program.
-
-
-## MIDI Controller Mode
-
-
-## Zone selections
-
-Finally, ensure that Zone 1 is enabled and that the button below is lit.
-
-<img src="images/numax-settings/Zone selections.jpg" style="width: 200px"/>
-
-## Global Settings
-
-Click the gear button (⚙️) to open the Global Settings. 
-
-Required setting:
-
-* Local Control: OFF (this means that NUMA sends MIDI messages but does not play its internal sounds)
-
-**Your NUMA X Piano should now be acting as a MIDI controller!**
-
-<img src="images/numax-settings/Global Settings 1 of 5.jpeg" style="width: 200px"/>
-<img src="images/numax-settings/Global Settings 2 of 5.jpeg" style="width: 200px"/>
-
-<img src="images/numax-settings/Global Settings 3 of 5.jpeg" style="width: 200px"/>
-<img src="images/numax-settings/Global Settings 4 of 5.jpeg" style="width: 200px"/>
-
-<img src="images/numax-settings/Global Settings 5 of 5.jpeg" style="width: 200px"/>
-
-
 ## Verifying MIDI Messages
 
 Install a MIDI monitor on your computer to verify that the NUMA X Piano is sending MIDI messages.
@@ -687,32 +628,3 @@ For Mac, I use [MIDI Monitor](https://www.snoize.com/MIDIMonitor/). There are ma
 First, verify connectivity by playing some notes on the keyboard. You should see Note On/Off MIDI messages in the monitor. If not, check your cabling and MIDI settings.
 
 Now, turn the Zone 1 knob. You should see CC messages in the monitor. Specifically, the CC number should match the Knob 1 CC setting in the Program settings for Zone 1 (it's CC 22 in the image above).  If not, check that the configuration is completed.
-
-
-
-## Long-story-short
-
-Long-story-short, I have found the Studiologic Numa X Piano to be difficult to use 
-live as a MIDI controller. 
-This project does MIDI mapping of the knobs and buttons so that they function consistently. 
-The implementation described uses Bome MIDI Translator Pro for the mapping and Gig Performer 
-as the live environment on a Mac. The approach can be adapted to other environments.
-
-With this solution I'm now happy with the Numa X Piano as a MIDI controller, 
-the interface of the Numa (knobs, color etc) work really well, I can drive my rig 
-from Gig Performer (my preference).  I now have the benefits of the excellent 
-Studiologic/Fatah keyboard and the Numa X sounds as a backup in case of computer issues. 
-
-## The Issue
-
-The Numa X Piano has a delightful interface with the colours, modes and all that. 
-The keybed is excellent. The build quality is tough. It's sounds a good but not with 
-the coverage I need for my gigs. When I bought the Numa X Piano 73 my intent was 
-always to use the Numa as a MIDI controller and use the built in sounds as a backup.
-
-But... I found that it is not a good MIDI controller. Most frustrating is that most 
-of the knobs behave differently depending upon which Zones is active. The effect is 
-that muting / unmuting an instrument changes the CC behaviour of nearly all the knobs!  
-For example: when the FXA knob is rotated when Zone 1 is active, the Numa sends MIDI CC 33. 
-But if Zone 2 is active, it is MIDI CC 34 (or 35, 36 for Zone 3 and 4 respectively). 
-
