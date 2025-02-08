@@ -8,7 +8,6 @@ icon: images/general/numax-icon.jpg
 image: /projects/numaxpiano-midi-controller/images/general/og-numax-midi-controller-mapper.svg
 ---
 
-
 <style>
     table th, table td {
         padding-left: 16px;
