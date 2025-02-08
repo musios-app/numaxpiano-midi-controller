@@ -4,7 +4,7 @@ title: Mapper MIDI for Numa X Piano
 description: Better way to use a Numa X Piano as a MIDI controller
 gitrepo: https://github.com/musios-app/numaxpiano-midi-controller
 tags: studiologic midi-controller numa-x-piano
-icon: images/general/numax-icon.jpg
+icon: assets/images/general/numax-icon.jpg
 image: /projects/numaxpiano-midi-controller/images/general/og-numax-midi-controller-mapper.svg
 ---
 
