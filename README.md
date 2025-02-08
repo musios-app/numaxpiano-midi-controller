@@ -4,8 +4,8 @@ title: Mapper MIDI for Numa X Piano
 description: Better way to use a Numa X Piano as a MIDI controller
 gitrepo: https://github.com/musios-app/numaxpiano-midi-controller
 tags: studiologic midi-controller numa-x-piano
-icon: images/numax-icon.jpg
-image: /projects/numaxpiano-midi-controller/images/og-numax-midi-controller-mapper.svg
+icon: images/general/numax-icon.jpg
+image: /projects/numaxpiano-midi-controller/images/general/og-numax-midi-controller-mapper.svg
 ---
 
 
@@ -147,8 +147,8 @@ Do I use this?  No. Except that it was a helpful step in exploring how to connec
 *NOTE on GP:* the Gig Script maps incoming MIDI values for buttons from Numa-X values to GP-style values (GP is more conventional I think).  I could not find a way in GP to re-map those values for return to the NumaX. If it's possible, [please let me know](https://github.com/musios-app/numaxpiano-midi-controller/issues).  [I did it with OSC messages but it was complex, difficult to maintain, and not something I wanted to make available.]
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/gig-performer/Numa X Piano - MIDI Controller - rackspace.png" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/gig-performer/Numa X Piano - MIDI Controller - rackspace.png" class="img-fluid maxh-300" alt="Rackspace with full set of MIDI Controller knobs and buttons"/>
+    <a href="assets/images/gig-performer/Numa X Piano - MIDI Controller - rackspace.png" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/gig-performer/Numa X Piano - MIDI Controller - rackspace.png" class="img-fluid maxh-300" alt="Rackspace with full set of MIDI Controller knobs and buttons"/>
     </a>
     <figcaption class="figure-caption text-center">Rackspace with full set of MIDI Controller knobs and buttons</figcaption>
 </div>
@@ -156,8 +156,8 @@ Do I use this?  No. Except that it was a helpful step in exploring how to connec
 This is what your Rig Manager should look like:
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/gig-performer/gp-rig-manager/GP-rig-manager.webp" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/gig-performer/gp-rig-manager/GP-rig-manager.webp" class="img-fluid maxh-150" alt="Rig Manager for Studiologic NUMA X Piano.gig"/>
+    <a href="assets/images/gig-performer/gp-rig-manager/GP-rig-manager.webp" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/gig-performer/gp-rig-manager/GP-rig-manager.webp" class="img-fluid maxh-150" alt="Rig Manager for Studiologic NUMA X Piano.gig"/>
     </a>
     <figcaption class="figure-caption text-center">Sample: Rig Manager for Studiologic NUMA X Piano.gig</figcaption>
 </div>
@@ -200,8 +200,8 @@ The basic rig used for development and testing:
 [Yes, the picture shows a Macbook. It's been tested on that too.]
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/basic-rig.webp" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/basic-rig.webp" class="img-fluid" alt="Basic rig equipment"/>
+    <a href="assets/images/general/basic-rig.webp" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/general/basic-rig.webp" class="img-fluid" alt="Basic rig equipment"/>
     </a>
     <figcaption class="figure-caption text-center">Basic Rig</figcaption>
 </div>
@@ -217,8 +217,8 @@ The "Local Control" settings puts the Numa X Piano into a MIDI Controller Mode.
 3. Set the Common Channel (I use 1 or 16)
 
 <div class="image-wrapper row justify-content-center w-25">
-    <a href="images/numax-photos/Global Settings 1 of 5.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/numax-photos/Global Settings 1 of 5.jpeg" class="img-fluid maxh-150" alt="Global Setting for Local Control"/>
+    <a href="assets/images/numax-photos/Global Settings 1 of 5.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/numax-photos/Global Settings 1 of 5.jpeg" class="img-fluid maxh-150" alt="Global Setting for Local Control"/>
     </a>
     <figcaption class="figure-caption text-center">Global Setting for Local Control</figcaption>
 </div>
@@ -234,8 +234,8 @@ In this stage in the project, we focus on two groups of controls that trigger MI
 2. Effects Controls (right side) 
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/NUMA X 73 as MIDI Controller.svg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/NUMA X 73 as MIDI Controller.svg" class="img-fluid" alt="MIDI Controller knobs and buttons"/>
+    <a href="assets/images/general/NUMA X 73 as MIDI Controller.svg" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/general/NUMA X 73 as MIDI Controller.svg" class="img-fluid" alt="MIDI Controller knobs and buttons"/>
     </a>
     <figcaption class="figure-caption text-center">MIDI Controller knobs and buttons</figcaption>
 </div>
@@ -249,14 +249,14 @@ These images show the physical controls on the Numa X Piano (left) and the corre
 
 <div class="image-wrapper row justify-content-center">
     <div class="col-6">
-        <a href="images/numax-photos/Instrument-Audio Zones.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
-            <img src="images/numax-photos/Instrument-Audio Zones.jpeg" class="img-fluid maxh-300" alt="Instrument Knobs"/>
+        <a href="assets/images/numax-photos/Instrument-Audio Zones.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img src="assets/images/numax-photos/Instrument-Audio Zones.jpeg" class="img-fluid maxh-300" alt="Instrument Knobs"/>
         </a>
         <figcaption class="figure-caption text-center">Physical Instrument Controls</figcaption>
     </div>
     <div class="col-6">
-        <a href="images/gig-performer/gp-rack/Controllers and MIDI - Instrument Zone.png" data-toggle="lightbox" data-gallery="example-gallery">
-            <img src="images/gig-performer/gp-rack/Controllers and MIDI - Instrument Zone.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
+        <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - Instrument Zone.png" data-toggle="lightbox" data-gallery="example-gallery">
+            <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - Instrument Zone.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
         </a>
         <figcaption class="figure-caption text-center">Logical Instrument Controls</figcaption>
     </div>
@@ -281,20 +281,20 @@ FX-A and FX-B each have 2 press/rotation knobs. The behavior is the same for FX-
 <div class="container">
     <div class="image-wrapper row justify-content-center d-flex">
         <div class="col-3 text-center">
-            <a href="images/numax-photos/FX-A controls.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
-                <img src="images/numax-photos/FX-A controls.jpeg" class="img-fluid maxh-300" alt="FX-A Physical Controls"/>
+            <a href="assets/images/numax-photos/FX-A controls.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/images/numax-photos/FX-A controls.jpeg" class="img-fluid maxh-300" alt="FX-A Physical Controls"/>
             </a>
             <figcaption class="figure-caption text-center">FX-A Physical Controls</figcaption>
         </div>
         <div class="col-6 text-center">
-            <a href="images/gig-performer/gp-rack/Controllers and MIDI - FXA.png" data-toggle="lightbox" data-gallery="example-gallery">
-                <img src="images/gig-performer/gp-rack/Controllers and MIDI - FXA.png" class="img-fluid maxh-300" alt="FX-A Logical MIDI Controls"/>
+            <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXA.png" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXA.png" class="img-fluid maxh-300" alt="FX-A Logical MIDI Controls"/>
             </a>
             <figcaption class="figure-caption text-center">FX-A Logical MIDI Controls</figcaption>
         </div>
         <div class="col-3 text-center">
-            <a href="images/gig-performer/gp-rack/Controllers and MIDI - FXA - goal.png" data-toggle="lightbox" data-gallery="example-gallery">
-                <img src="images/gig-performer/gp-rack/Controllers and MIDI - FXA - goal.png" class="img-fluid maxh-300" alt="Goal: FX-A Logical MIDI Controls"/>
+            <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXA - goal.png" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXA - goal.png" class="img-fluid maxh-300" alt="Goal: FX-A Logical MIDI Controls"/>
             </a>
             <figcaption class="figure-caption text-center">Goal: FX-A Logical MIDI Controls</figcaption>
         </div>
@@ -348,20 +348,20 @@ As mentioned, the design for the FX-B control groups is the same except that the
 
 <div class="image-wrapper row justify-content-center  d-flex">
     <div class="col-3 text-center">
-        <a href="images/numax-photos/FX-B controls.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
-            <img src="images/numax-photos/FX-B controls.jpeg" class="img-fluid maxh-300" alt="FX-B Controls"/>
+        <a href="assets/images/numax-photos/FX-B controls.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img src="assets/images/numax-photos/FX-B controls.jpeg" class="img-fluid maxh-300" alt="FX-B Controls"/>
         </a>
         <figcaption class="figure-caption text-center">FX-B Physical Controls</figcaption>
     </div>
     <div class="col-6 text-center">
-        <a href="images/gig-performer/gp-rack/Controllers and MIDI - FXB.png" data-toggle="lightbox" data-gallery="example-gallery">
-            <img src="images/gig-performer/gp-rack/Controllers and MIDI - FXB.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
+        <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXB.png" data-toggle="lightbox" data-gallery="example-gallery">
+            <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXB.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
         </a>
         <figcaption class="figure-caption text-center">FX-B Logical MIDI Controls</figcaption>
     </div>
     <div class="col-3 text-center">
-        <a href="images/gig-performer/gp-rack/Controllers and MIDI - FXB - goal.png" data-toggle="lightbox" data-gallery="example-gallery">
-            <img src="images/gig-performer/gp-rack/Controllers and MIDI - FXB - goal.png" class="img-fluid maxh-300" alt="Goal: FX-B Logical MIDI Controls"/>
+        <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXB - goal.png" data-toggle="lightbox" data-gallery="example-gallery">
+            <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXB - goal.png" class="img-fluid maxh-300" alt="Goal: FX-B Logical MIDI Controls"/>
         </a>
         <figcaption class="figure-caption text-center">Goal: FX-B Logical MIDI Controls</figcaption>
     </div>
@@ -402,11 +402,11 @@ The Delay and Reverb controls look like the FX A and FX B controls but behave so
 
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/gig-performer/gp-rack/Controllers and MIDI - Delay.png" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/gig-performer/gp-rack/Controllers and MIDI - Delay.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
+    <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - Delay.png" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - Delay.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
     </a>
-    <a href="images/gig-performer/gp-rack/Controllers and MIDI - Reverb.png" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/gig-performer/gp-rack/Controllers and MIDI - Reverb.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
+    <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - Reverb.png" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - Reverb.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
     </a>
     <figcaption class="figure-caption text-center">Delay and Reverb Controls</figcaption>
 </div>
@@ -469,8 +469,8 @@ The Mapper* provides a live translation between (a) the MIDI from the Numa X Pia
 (Technically, it could be called a re-write proxy.)
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/logical-architecture.svg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/logical-architecture.svg" class="img-fluid" alt="Logical / Software Design"/>
+    <a href="assets/images/general/logical-architecture.svg" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/general/logical-architecture.svg" class="img-fluid" alt="Logical / Software Design"/>
     </a>
     <figcaption class="figure-caption text-center">Logical Design</figcaption>
 </div>
@@ -806,8 +806,8 @@ This sequence shows the MIDI messages fired by the Mapper in response to a CC ev
 3. Otherwise, for all other MIDI messages (including CC numbers not shown in the table) pass them forward without change.
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/sequence-diagram/sequence-diagram-from-numax.svg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/sequence-diagram/sequence-diagram-from-numax.svg"/>
+    <a href="assets/images/sequence-diagram/sequence-diagram-from-numax.svg" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/sequence-diagram/sequence-diagram-from-numax.svg"/>
     </a>
     <figcaption class="figure-caption text-center">Sequence Diagram for MIDI Messages from Numa X Piano</figcaption>
 </div>
@@ -823,8 +823,8 @@ This sequence shows the MIDI messages fired by the Mapper in response to a CC ev
 3. Otherwise, for all other MIDI messages (including CC numbers not shown in the table) pass them on without change.
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/sequence-diagram/sequence-diagram-from-performance-tool.svg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/sequence-diagram/sequence-diagram-from-performance-tool.svg"/>
+    <a href="assets/images/sequence-diagram/sequence-diagram-from-performance-tool.svg" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/sequence-diagram/sequence-diagram-from-performance-tool.svg"/>
     </a>
     <figcaption class="figure-caption text-center">Sequence Diagram for MIDI Messages from the Performance Tool</figcaption>
 </div>
@@ -836,8 +836,8 @@ This sequence shows the MIDI messages fired by the Mapper in response to a CC ev
 The player turns the FX B Effects level knob...
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/sequence-diagram/sequence-diagram-FXB.svg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/sequence-diagram/sequence-diagram-FXB.svg"/>
+    <a href="assets/images/sequence-diagram/sequence-diagram-FXB.svg" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/sequence-diagram/sequence-diagram-FXB.svg"/>
     </a>
     <figcaption class="figure-caption text-center">MIDI Messages for FX B rotation</figcaption>
 </div>
@@ -852,8 +852,8 @@ If the piano has Zone 2 selected, the Numa X will send MIDI CC number 105 (x60).
 This MIDI log (by the MIDI Monitor app) shows this sequence. In this case it the BOME implementation. Note that it takes only 5msec for the mapping to complete which is entirely satisfactory for a non-time-sensitive parameter change (knob rotation).
 
 <div class="image-wrapper row justify-content-center">
-    <a href="images/midi-monitor/fxb-example-midi-monitor.png" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="images/midi-monitor/fxb-example-midi-monitor.png"/>
+    <a href="assets/images/midi-monitor/fxb-example-midi-monitor.png" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/midi-monitor/fxb-example-midi-monitor.png"/>
     </a>
     <figcaption class="figure-caption text-center">MIDI Monitor capture FX B rotation messages</figcaption>
 </div>
