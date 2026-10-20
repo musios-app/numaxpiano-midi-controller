@@ -69,7 +69,7 @@ image: /projects/numaxpiano-midi-controller/images/general/og-numax-midi-control
 
 Github: [https://github.com/musios-app/numaxpiano-midi-controller](https://github.com/musios-app/numaxpiano-midi-controller)
 <br/>
-Licence: [Creative Commons CC0 1.0 Universal](../LICENSE)
+Licence: [Creative Commons CC0 1.0 Universal](./LICENSE)
 <br/>
 Author: Andrew Hunt [musios.app](https://musios.app)
 <br/>
@@ -132,7 +132,7 @@ Status: <span class="badge text-bg-warning">Work in Progress</span>
 
 ## Gig Performer - full controller
 
-<a href="Gig Files/Studiologic NUMA X Piano.gig">
+<a href="Gig Performer Files/Studiologic NUMA X Piano.gig">
     <img src="assets/images/font-awesome/fa-download.svg" height="20"/> 
     Download Studiologic NUMA X Piano.gig
 </a>
