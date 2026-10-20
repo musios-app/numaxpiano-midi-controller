@@ -183,7 +183,7 @@ This is what your Rig Manager should look like:
 1. An algorithm for a "MIDI Mapper" that makes one controller = one MIDI CC
 2. Implementation in [Bome MIDI Translator Pro](https://www.bome.com/products/miditranslator) (paid software which a free trial)
 3. Implementation in NodeJS / Javascript (functional but too much latency for live keys)
-4. A configurable ["Rig Setup" generator for the Numa X Piano](gen-numaxpiano-gp-rigsetup/README.html)
+4. A configurable <a href="#" title="Not available yet" style="color: #6c757d; font-style: italic; text-decoration: underline dotted;">"Rig Setup" generator for the Numa X Piano</a>
 
 
 ## Basic Rig
