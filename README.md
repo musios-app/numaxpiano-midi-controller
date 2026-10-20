@@ -347,8 +347,8 @@ As mentioned, the design for the FX-B control groups is the same except that the
 
 <div class="image-wrapper row justify-content-center  d-flex">
     <div class="col-3 text-center">
-        <a href="assets/images/numax-photos/FX-B controls.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
-            <img src="assets/images/numax-photos/FX-B controls.jpeg" class="img-fluid maxh-300" alt="FX-B Controls"/>
+        <a href="assets/images/numax-photos/FX-b controls.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
+            <img src="assets/images/numax-photos/FX-b controls.jpeg" class="img-fluid maxh-300" alt="FX-B Controls"/>
         </a>
         <figcaption class="figure-caption text-center">FX-B Physical Controls</figcaption>
     </div>
@@ -891,7 +891,7 @@ The `process.nextTick()` could prioritize sending of MIDI messages. This matters
 
 
 Notes: 
-* This is a work in progress. The Studiologic doc is sparse so there may be errors. Please submit comments in [issues page on the Github project](https://github.com/andrewjhunt/numaxpiano-midi-controller).
+* This is a work in progress. The Studiologic doc is sparse so there may be errors. Please submit comments in [issues page on the Github project](https://github.com/musios-app/numaxpiano-midi-controller/issues).
 * The documentation and images is from a NUMA X Piano 73. It is likely that the 88 and 88 HD will be similar but this needs to be confirmed. Unfortunately, I have no idea about the Compact series. Use the issues or submit a pull request if you can help.
 * This work was done on a Mac. It shouldn't be that different for Windows or Linux.
 
