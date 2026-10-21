@@ -146,8 +146,8 @@ Do I use this?  No. Except that it was a helpful step in exploring how to connec
 *NOTE on GP:* the Gig Script maps incoming MIDI values for buttons from Numa-X values to GP-style values (GP is more conventional I think).  I could not find a way in GP to re-map those values for return to the NumaX. If it's possible, [please let me know](https://github.com/musios-app/numaxpiano-midi-controller/issues).  [I did it with OSC messages but it was complex, difficult to maintain, and not something I wanted to make available.]
 
 <div class="image-wrapper row justify-content-center">
-    <a href="assets/images/gig-performer/Numa X Piano - MIDI Controller - rackspace.png" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="assets/images/gig-performer/Numa X Piano - MIDI Controller - rackspace.png" class="img-fluid maxh-300" alt="Rackspace with full set of MIDI Controller knobs and buttons"/>
+    <a href="assets/images/gig-performer/Numa X Piano - MIDI Controller - rackspace.webp" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/gig-performer/Numa X Piano - MIDI Controller - rackspace.webp" class="img-fluid maxh-300" alt="Rackspace with full set of MIDI Controller knobs and buttons"/>
     </a>
     <figcaption class="figure-caption text-center">Rackspace with full set of MIDI Controller knobs and buttons</figcaption>
 </div>
@@ -216,8 +216,8 @@ The "Local Control" settings puts the Numa X Piano into a MIDI Controller Mode.
 3. Set the Common Channel (I use 1 or 16)
 
 <div class="image-wrapper row justify-content-center w-25">
-    <a href="assets/images/numax-photos/Global Settings 1 of 5.jpeg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="assets/images/numax-photos/Global Settings 1 of 5.jpeg" class="img-fluid maxh-150" alt="Global Setting for Local Control"/>
+    <a href="assets/images/numax-photos/Global Settings 1 of 5.webp" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/numax-photos/Global Settings 1 of 5.webp" class="img-fluid maxh-150" alt="Global Setting for Local Control"/>
     </a>
     <figcaption class="figure-caption text-center">Global Setting for Local Control</figcaption>
 </div>
@@ -286,8 +286,8 @@ FX-A and FX-B each have 2 press/rotation knobs. The behavior is the same for FX-
             <figcaption class="figure-caption text-center">FX-A Physical Controls</figcaption>
         </div>
         <div class="col-6 text-center">
-            <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXA.png" data-toggle="lightbox" data-gallery="example-gallery">
-                <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXA.png" class="img-fluid maxh-300" alt="FX-A Logical MIDI Controls"/>
+            <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXA.webp" data-toggle="lightbox" data-gallery="example-gallery">
+                <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXA.webp" class="img-fluid maxh-300" alt="FX-A Logical MIDI Controls"/>
             </a>
             <figcaption class="figure-caption text-center">FX-A Logical MIDI Controls</figcaption>
         </div>
@@ -353,8 +353,8 @@ As mentioned, the design for the FX-B control groups is the same except that the
         <figcaption class="figure-caption text-center">FX-B Physical Controls</figcaption>
     </div>
     <div class="col-6 text-center">
-        <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXB.png" data-toggle="lightbox" data-gallery="example-gallery">
-            <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXB.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
+        <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXB.webp" data-toggle="lightbox" data-gallery="example-gallery">
+            <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - FXB.webp" class="img-fluid maxh-300" alt="Instrument Knobs"/>
         </a>
         <figcaption class="figure-caption text-center">FX-B Logical MIDI Controls</figcaption>
     </div>
@@ -401,11 +401,11 @@ The Delay and Reverb controls look like the FX A and FX B controls but behave so
 
 
 <div class="image-wrapper row justify-content-center">
-    <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - Delay.png" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - Delay.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
+    <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - Delay.webp" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - Delay.webp" class="img-fluid maxh-300" alt="Instrument Knobs"/>
     </a>
-    <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - Reverb.png" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - Reverb.png" class="img-fluid maxh-300" alt="Instrument Knobs"/>
+    <a href="assets/images/gig-performer/gp-rack/Controllers and MIDI - Reverb.webp" data-toggle="lightbox" data-gallery="example-gallery">
+        <img src="assets/images/gig-performer/gp-rack/Controllers and MIDI - Reverb.webp" class="img-fluid maxh-300" alt="Instrument Knobs"/>
     </a>
     <figcaption class="figure-caption text-center">Delay and Reverb Controls</figcaption>
 </div>
