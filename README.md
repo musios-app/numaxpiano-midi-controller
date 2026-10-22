@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mapper MIDI for Numa X Piano
-description: Better way to use a Numa X Piano as a MIDI controller
+description: The knobs, buttons and controls on a Numa X Piano are quirky to use. We explore them and offer better controls with Bome, Node.js and Gig Performer.
 gitrepo: https://github.com/musios-app/numaxpiano-midi-controller
 tags: studiologic midi-controller numa-x-piano
 icon: assets/images/general/numax-icon-box.svg
