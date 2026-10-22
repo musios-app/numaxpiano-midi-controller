@@ -6,6 +6,10 @@ gitrepo: https://github.com/musios-app/numaxpiano-midi-controller
 tags: studiologic midi-controller numa-x-piano
 icon: assets/images/general/numax-icon-box.svg
 image: /projects/numaxpiano-midi-controller/images/general/og-numax-midi-controller-mapper.svg
+date: 2024-10-07
+seo:
+  type: TechArticle
+  date_modified: 2026-10-22
 ---
 
 <style>
