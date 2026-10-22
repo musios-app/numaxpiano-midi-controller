@@ -137,7 +137,7 @@ Status: <span class="badge text-bg-warning">Work in Progress</span>
 ## Gig Performer - full controller
 
 <a href="Gig Performer Files/Studiologic NUMA X Piano.gig">
-    <img src="assets/images/font-awesome/fa-download.svg" height="20"/> 
+    <img src="assets/images/font-awesome/fa-download.svg" height="20" alt=""/> 
     Download Studiologic NUMA X Piano.gig
 </a>
 
@@ -810,7 +810,7 @@ This sequence shows the MIDI messages fired by the Mapper in response to a CC ev
 
 <div class="image-wrapper row justify-content-center">
     <a href="assets/images/sequence-diagram/sequence-diagram-from-numax.svg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="assets/images/sequence-diagram/sequence-diagram-from-numax.svg"/>
+        <img src="assets/images/sequence-diagram/sequence-diagram-from-numax.svg" alt="Sequence diagram for MIDI messages from the Numa X Piano"/>
     </a>
     <figcaption class="figure-caption text-center">Sequence Diagram for MIDI Messages from Numa X Piano</figcaption>
 </div>
@@ -827,7 +827,7 @@ This sequence shows the MIDI messages fired by the Mapper in response to a CC ev
 
 <div class="image-wrapper row justify-content-center">
     <a href="assets/images/sequence-diagram/sequence-diagram-from-performance-tool.svg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="assets/images/sequence-diagram/sequence-diagram-from-performance-tool.svg"/>
+        <img src="assets/images/sequence-diagram/sequence-diagram-from-performance-tool.svg" alt="Sequence diagram for MIDI messages from the performance tool"/>
     </a>
     <figcaption class="figure-caption text-center">Sequence Diagram for MIDI Messages from the Performance Tool</figcaption>
 </div>
@@ -840,7 +840,7 @@ The player turns the FX B Effects level knob...
 
 <div class="image-wrapper row justify-content-center">
     <a href="assets/images/sequence-diagram/sequence-diagram-FXB.svg" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="assets/images/sequence-diagram/sequence-diagram-FXB.svg"/>
+        <img src="assets/images/sequence-diagram/sequence-diagram-FXB.svg" alt="MIDI messages for an FX B rotation"/>
     </a>
     <figcaption class="figure-caption text-center">MIDI Messages for FX B rotation</figcaption>
 </div>
@@ -856,7 +856,7 @@ This MIDI log (by the MIDI Monitor app) shows this sequence. In this case it the
 
 <div class="image-wrapper row justify-content-center">
     <a href="assets/images/midi-monitor/fxb-example-midi-monitor.png" data-toggle="lightbox" data-gallery="example-gallery">
-        <img src="assets/images/midi-monitor/fxb-example-midi-monitor.png"/>
+        <img src="assets/images/midi-monitor/fxb-example-midi-monitor.png" alt="MIDI Monitor capture of the FX B rotation messages"/>
     </a>
     <figcaption class="figure-caption text-center">MIDI Monitor capture FX B rotation messages</figcaption>
 </div>
